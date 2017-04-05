@@ -24,6 +24,18 @@ class Atframework_Facts extends WP_Widget {
 		$fact_four   		= isset( $instance['fact_four'] ) ? esc_attr( $instance['fact_four'] ) : '';		
 		$fact_four_max  	= isset( $instance['fact_four_max'] ) ? esc_html( $instance['fact_four_max'] ) : '';
 		$fact_four_icon  	= isset( $instance['fact_four_icon'] ) ? esc_html( $instance['fact_four_icon'] ) : '';	
+		
+		$fact_five   		= isset( $instance['fact_five'] ) ? esc_attr( $instance['fact_five'] ) : '';		
+		$fact_five_max  	= isset( $instance['fact_five_max'] ) ? esc_html( $instance['fact_five_max'] ) : '';
+		$fact_five_icon  	= isset( $instance['fact_five_icon'] ) ? esc_html( $instance['fact_five_icon'] ) : '';	
+		
+		$fact_six   		= isset( $instance['fact_six'] ) ? esc_attr( $instance['fact_six'] ) : '';		
+		$fact_six_max  	= isset( $instance['fact_six_max'] ) ? esc_html( $instance['fact_six_max'] ) : '';
+		$fact_six_icon  	= isset( $instance['fact_six_icon'] ) ? esc_html( $instance['fact_six_icon'] ) : '';	
+		
+		$fact_seven   		= isset( $instance['fact_seven'] ) ? esc_attr( $instance['fact_seven'] ) : '';		
+		$fact_seven_max  	= isset( $instance['fact_seven_max'] ) ? esc_html( $instance['fact_seven_max'] ) : '';
+		$fact_seven_icon  	= isset( $instance['fact_seven_icon'] ) ? esc_html( $instance['fact_seven_icon'] ) : '';	
 	?>
 	<p><?php _e('You can find a list of the available icons ', 'astrid'); ?><a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_blank"><?php _e('here.', 'astrid'); ?></a>&nbsp;<?php _e('Usage example: <strong>fa-android</strong>', 'astrid'); ?></p>
 	<p>
@@ -95,6 +107,57 @@ class Atframework_Facts extends WP_Widget {
 	<input class="widefat" id="<?php echo $this->get_field_id('fact_four_icon'); ?>" name="<?php echo $this->get_field_name('fact_four_icon'); ?>" type="text" value="<?php echo $fact_four_icon; ?>" />
 	</p>							
 
+
+	<!-- fact five -->
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_five'); ?>"><?php _e('Fifth fact name', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_five'); ?>" name="<?php echo $this->get_field_name('fact_five'); ?>" type="text" value="<?php echo $fact_five; ?>" />
+	</p>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_five_max'); ?>"><?php _e('Fifth fact value', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_five_max'); ?>" name="<?php echo $this->get_field_name('fact_five_max'); ?>" type="text" value="<?php echo $fact_five_max; ?>" />
+	</p>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_five_icon'); ?>"><?php _e('Fifth fact icon', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_five_icon'); ?>" name="<?php echo $this->get_field_name('fact_five_icon'); ?>" type="text" value="<?php echo $fact_five_icon; ?>" />
+	</p>
+	
+
+	<!-- fact six -->
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_six'); ?>"><?php _e('Sixth fact name', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_six'); ?>" name="<?php echo $this->get_field_name('fact_six'); ?>" type="text" value="<?php echo $fact_six; ?>" />
+	</p>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_six_max'); ?>"><?php _e('Sixth fact value', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_six_max'); ?>" name="<?php echo $this->get_field_name('fact_six_max'); ?>" type="text" value="<?php echo $fact_six_max; ?>" />
+	</p>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_six_icon'); ?>"><?php _e('Sixth fact icon', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_six_icon'); ?>" name="<?php echo $this->get_field_name('fact_six_icon'); ?>" type="text" value="<?php echo $fact_six_icon; ?>" />
+	</p>
+		
+
+	<!-- fact seven -->
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_seven'); ?>"><?php _e('Seventh fact name', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_seven'); ?>" name="<?php echo $this->get_field_name('fact_seven'); ?>" type="text" value="<?php echo $fact_seven; ?>" />
+	</p>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_seven_max'); ?>"><?php _e('Seventh fact value', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_seven_max'); ?>" name="<?php echo $this->get_field_name('fact_seven_max'); ?>" type="text" value="<?php echo $fact_seven_max; ?>" />
+	</p>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('fact_seven_icon'); ?>"><?php _e('Seventh fact icon', 'astrid'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('fact_seven_icon'); ?>" name="<?php echo $this->get_field_name('fact_seven_icon'); ?>" type="text" value="<?php echo $fact_seven_icon; ?>" />
+	</p>
+
 	<?php
 	}
 
@@ -113,6 +176,18 @@ class Atframework_Facts extends WP_Widget {
 		$instance['fact_four'] 		= sanitize_text_field($new_instance['fact_four']);
 		$instance['fact_four_max'] 	= sanitize_text_field($new_instance['fact_four_max']);
 		$instance['fact_four_icon'] = sanitize_text_field($new_instance['fact_four_icon']);
+		
+		$instance['fact_five'] 		= sanitize_text_field($new_instance['fact_five']);
+		$instance['fact_five_max'] 	= sanitize_text_field($new_instance['fact_five_max']);
+		$instance['fact_five_icon'] = sanitize_text_field($new_instance['fact_five_icon']);
+		
+		$instance['fact_six'] 		= sanitize_text_field($new_instance['fact_six']);
+		$instance['fact_six_max'] 	= sanitize_text_field($new_instance['fact_six_max']);
+		$instance['fact_six_icon'] = sanitize_text_field($new_instance['fact_six_icon']);
+		
+		$instance['fact_seven'] 		= sanitize_text_field($new_instance['fact_seven']);
+		$instance['fact_seven_max'] 	= sanitize_text_field($new_instance['fact_seven_max']);
+		$instance['fact_seven_icon'] = sanitize_text_field($new_instance['fact_seven_icon']);
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 		if ( isset($alloptions['atframework_facts']) )
@@ -156,7 +231,19 @@ class Atframework_Facts extends WP_Widget {
 		$fact_three_icon= isset( $instance['fact_three_icon'] ) ? esc_html( $instance['fact_three_icon'] ) : '';
 		$fact_four   	= isset( $instance['fact_four'] ) ? esc_attr( $instance['fact_four'] ) : '';		
 		$fact_four_max 	= isset( $instance['fact_four_max'] ) ? esc_html( $instance['fact_four_max'] ) : '';
-		$fact_four_icon = isset( $instance['fact_four_icon'] ) ? esc_html( $instance['fact_four_icon'] ) : '';		
+		$fact_four_icon = isset( $instance['fact_four_icon'] ) ? esc_html( $instance['fact_four_icon'] ) : '';	
+		
+		$fact_five   	= isset( $instance['fact_five'] ) ? esc_attr( $instance['fact_five'] ) : '';		
+		$fact_five_max 	= isset( $instance['fact_five_max'] ) ? esc_html( $instance['fact_five_max'] ) : '';
+		$fact_five_icon = isset( $instance['fact_five_icon'] ) ? esc_html( $instance['fact_five_icon'] ) : '';	
+		
+		$fact_six   	= isset( $instance['fact_six'] ) ? esc_attr( $instance['fact_six'] ) : '';		
+		$fact_six_max 	= isset( $instance['fact_six_max'] ) ? esc_html( $instance['fact_six_max'] ) : '';
+		$fact_six_icon = isset( $instance['fact_six_icon'] ) ? esc_html( $instance['fact_six_icon'] ) : '';	
+		
+		$fact_seven   	= isset( $instance['fact_seven'] ) ? esc_attr( $instance['fact_seven'] ) : '';		
+		$fact_seven_max 	= isset( $instance['fact_seven_max'] ) ? esc_html( $instance['fact_seven_max'] ) : '';
+		$fact_seven_icon = isset( $instance['fact_seven_icon'] ) ? esc_html( $instance['fact_seven_icon'] ) : '';		
 
 		echo $args['before_widget'];
 ?>
@@ -167,29 +254,53 @@ class Atframework_Facts extends WP_Widget {
 			<?php if ($fact_one !='') : ?>
 			<div class="fact">
 				<i class="fa <?php echo $fact_one_icon; ?>"></i>
-				<div class="fact-number" data-to="<?php echo $fact_one_max; ?>"><?php echo $fact_one_max; ?></div>				
 				<div class="fact-name"><?php echo $fact_one; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_one_max; ?>"><?php echo $fact_one_max; ?></div>	
 			</div>
 			<?php endif; ?>
 			<?php if ($fact_two !='') : ?>
 			<div class="fact">
-				<i class="fa <?php echo $fact_two_icon; ?>"></i>
-				<div class="fact-number" data-to="<?php echo $fact_two_max; ?>"><?php echo $fact_two_max; ?></div>			
+				<i class="fa <?php echo $fact_two_icon; ?>"></i>	
 				<div class="fact-name"><?php echo $fact_two; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_two_max; ?>"><?php echo $fact_two_max; ?></div>		
 			</div>
 			<?php endif; ?>
 			<?php if ($fact_three !='') : ?>
 			<div class="fact">
-				<i class="fa <?php echo $fact_three_icon; ?>"></i>
-				<div class="fact-number" data-to="<?php echo $fact_three_max; ?>"><?php echo $fact_three_max; ?></div>				
+				<i class="fa <?php echo $fact_three_icon; ?>"></i>		
 				<div class="fact-name"><?php echo $fact_three; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_three_max; ?>"><?php echo $fact_three_max; ?></div>		
 			</div>
 			<?php endif; ?>
 			<?php if ($fact_four !='') : ?>
 			<div class="fact">
 				<i class="fa <?php echo $fact_four_icon; ?>"></i>
-				<div class="fact-number" data-to="<?php echo $fact_four_max; ?>"><?php echo $fact_four_max; ?></div>				
 				<div class="fact-name"><?php echo $fact_four; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_four_max; ?>"><?php echo $fact_four_max; ?></div>				
+			</div>
+			<?php endif; ?>
+			
+			<?php if ($fact_five !='') : ?>
+			<div class="fact">
+				<i class="fa <?php echo $fact_five_icon; ?>"></i>
+				<div class="fact-name"><?php echo $fact_five; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_five_max; ?>"><?php echo $fact_five_max; ?></div>				
+			</div>
+			<?php endif; ?>
+			
+			<?php if ($fact_six !='') : ?>
+			<div class="fact">
+				<i class="fa <?php echo $fact_six_icon; ?>"></i>
+				<div class="fact-name"><?php echo $fact_six; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_six_max; ?>"><?php echo $fact_six_max; ?></div>				
+			</div>
+			<?php endif; ?>
+			
+			<?php if ($fact_seven !='') : ?>
+			<div class="fact">
+				<i class="fa <?php echo $fact_seven_icon; ?>"></i>
+				<div class="fact-name"><?php echo $fact_seven; ?></div>
+				<div class="fact-number" data-to="<?php echo $fact_seven_max; ?>"><?php echo $fact_seven_max; ?></div>				
 			</div>
 			<?php endif; ?>
 		</div>
