@@ -130,9 +130,23 @@ class Atframework_Services extends WP_Widget {
 							<div class="service-content">
 								<h3 class="service-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<?php echo wp_trim_words( get_the_content(), 12 ); ?>
+								<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More  &rarr;</a>
 							</div>
 						</div>
 					<?php endwhile; ?>
+
+						<div class="service astrid-3col">
+							<?php if ( has_post_thumbnail() ) : ?>
+							<div class="service-thumb">
+								<?php the_post_thumbnail('astrid-small-thumb'); ?>
+							</div>
+							<?php endif; ?>
+							<div class="service-content">
+								<h3 class="service-title">Want to Inquire?</h3>
+								For inquiries, kindly contact us at <a href="mailto:info@friolandcorp.com">info@friolandcorp.com</a> with the desired service as the subject of the e-mail (i.e. Land Use Conversion; Home Improvement and Interior Design; Leasing).
+							</div>
+						</div>
+					
 				</div>
 
 				<?php if ($see_all != '') : ?>

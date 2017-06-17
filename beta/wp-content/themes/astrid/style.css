@@ -1355,21 +1355,6 @@ section.at-3-col {
     max-width: 500px;
 }
 
-.row-overlay {
-    background-color: rgba(37, 46, 53, 0.8);
-    content: '';
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-section.atframework_facts_widget,
-section.atframework_services_widget {
-    padding-bottom: 0 !important;
-}
-
 .multicolumn-row {
     width: 100%;
     display: -webkit-flex;
@@ -1392,7 +1377,7 @@ section.atframework_services_widget {
 .atblock .widget-title {
     font-size: 36px;
     text-align: center;
-    margin: 0 0 75px;
+    margin: 0 0 45px;
     position: relative;
 }
 
@@ -1437,17 +1422,26 @@ section.atframework_services_widget {
 
 /* Services */
 
-.service-area {
-    text-align: center;
-}
-
 .service {
     text-align: center;
     margin-bottom: 45px;
     padding: 0 15px;
-    width: 32%;
+    width: 29%;
     display: inline-block;
     vertical-align: top;
+    /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+    min-height: 150px;
+}
+
+section#services .service-content {
+    margin: 20px auto;
+    display: table;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.service-area {
+    text-align: center;
 }
 
 .astrid-3col:nth-of-type(3n+1) {
@@ -1895,16 +1889,6 @@ body.page-template-page_widgetized {
     text-align: center;
 }
 
-.header-image::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(37, 46, 53, 0.6);
-}
-
 i.logo {
     display: block;
     margin: 0 auto;
@@ -1936,6 +1920,62 @@ i.logo {
     display: table;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+.widget p .btn-primary:hover,
+.service-content .btn-primary:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.widget p .btn-primary,
+.service-content .btn-primary {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    margin: 20px auto;
+    display: block;
+    width: 220px;
+    text-align: center;
+}
+
+.widget p,
+.widget ol {
+    margin: 20px auto;
+    color: #fff;
+    display: table;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 50%;
+}
+
+.header-image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 46, 53, 0.5);
+}
+
+
+/*section#about-us .row-overlay {
+    background-color: rgba(37, 46, 53, 0.7);
+}
+
+section#services .row-overlay {
+    background-color: rgba(150, 150, 150, 0.7);
+}*/
+
+.row-overlay {
+    background-color: rgba(37, 46, 53, 0.8);
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .header-subtext {
