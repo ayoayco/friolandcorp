@@ -1915,7 +1915,14 @@ body.page-template-page_widgetized {
 .header-text {
     margin: 0 auto;
     color: #fff;
-    font-size: 76px;
+    display: table;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header-desc {
+    margin: 30px auto;
+    color: #fff;
     display: table;
     text-transform: uppercase;
     letter-spacing: 5px;

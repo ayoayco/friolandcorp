@@ -329,7 +329,8 @@ function astrid_header_text() {
 	echo '<div class="header-info">
 			<div class="container">
 				<h4 class="header-subtext">' . wp_kses_post($header_subtext) . '</h4>
-				<h3 class="header-text">' . wp_kses_post($header_text) . '</h3>';
+				<h3 class="header-text">' . wp_kses_post($header_text) . '</h3>
+				<h5 class="header-desc">' . get_bloginfo('description') . '</h5>';
 				if ($header_button_url) {
 					echo '<a class="button header-button" href="' . esc_url($header_button_url) . '">' . esc_html($header_button) . '</a>';
 				}
