@@ -13,7 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -46,7 +46,8 @@
 	<?php if ( astrid_has_header() == 'has-header' ) : ?>
 	<div class="header-image">
 		<?php astrid_header_text(); ?>
-		<img class="large-header" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
+		
+		<img class="large-header" src="wp-content/themes/astrid/images/Sunset-Lapse.jpg" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
 		
 		<?php $mobile_default = get_template_directory_uri() . '/images/header-mobile.jpg'; ?>
 		<?php $mobile = get_theme_mod('mobile_header', $mobile_default); ?>
