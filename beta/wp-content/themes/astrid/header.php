@@ -46,7 +46,6 @@
 	<?php if ( astrid_has_header() == 'has-header' ) : ?>
 	<div class="header-image">
 		<?php astrid_header_text(); ?>
-		
 		<img class="large-header" src="wp-content/themes/astrid/images/Sunset-Lapse.jpg" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
 		
 		<?php $mobile_default = get_template_directory_uri() . '/images/header-mobile.jpg'; ?>
