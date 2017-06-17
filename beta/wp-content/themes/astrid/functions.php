@@ -329,8 +329,12 @@ function astrid_header_text() {
 	echo '<div class="header-info">
 			<div class="container">
 				<i class="logo">&nbsp;</i>
+				<!--h4 class="header-subtext">' . wp_kses_post($header_subtext) . '</h4-->
 				<h3 class="header-text">' . wp_kses_post($header_text) . '</h3>
-				<h5 class="header-desc">' . get_bloginfo('description') . '</h5>';
+				<h5 class="header-desc">' . get_bloginfo('description') . '</h5>
+				
+				<div>'.do_shortcode('[wonderplugin_carousel id="1"]').'</div>';
+
 				if ($header_button_url) {
 					echo '<a class="button header-button" href="' . esc_url($header_button_url) . '">' . esc_html($header_button) . '</a>';
 				}
