@@ -1901,13 +1901,22 @@ body.page-template-page_widgetized {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(37, 46, 53, 0.9);
+    background-color: rgba(37, 46, 53, 0.5);
+}
+
+i.logo {
+    display: block;
+    margin: 0 auto;
+    background-size: cover !important;
+    height: 200px;
+    width: 200px;
 }
 
 .header-info {
     width: 100%;
     position: absolute;
-    top: 35%;
+    /*margin-top: 70px;*/
+    top: 10% !important;
     text-align: center;
     z-index: 11;
 }
@@ -2496,6 +2505,8 @@ body.page-template-page_widgetized {
 ## Responsive
 --------------------------------------------------------------*/
 
+
+/*
 @media only screen and (max-width: 1199px) {
     .woocommerce .content-area {
         width: 610px;
@@ -2755,4 +2766,4 @@ body.page-template-page_widgetized {
     .woocommerce-page ul.products li.product {
         width: 100%;
     }
-}
+}*/
