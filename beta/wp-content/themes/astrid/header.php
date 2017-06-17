@@ -33,18 +33,17 @@
 
 	<header id="masthead" class="site-header <?php echo astrid_has_header(); ?>" role="banner">
 		<div class="container">
-			<div class="site-branding col-md-4 col-sm-6 col-xs-12">
-				<?php astrid_branding(); ?>
-			</div>
-			<div class="btn-menu col-md-8 col-sm-6 col-xs-12"><i class="fa fa-navicon"></i></div>
-			<nav id="mainnav" class="main-navigation col-md-8 col-sm-6 col-xs-12" role="navigation">
+			<!--div class="site-branding col-md-4 col-sm-6 col-xs-12">
+				<?php // astrid_branding(); ?>
+			</div-->
+			<nav id="mainnav" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 
 	<?php if ( astrid_has_header() == 'has-header' ) : ?>
-	<div class="header-image">
+	<div class="header-image" id="top-section">
 		<?php astrid_header_text(); ?>
 		<img class="large-header" src="wp-content/themes/astrid/images/Sunset-Lapse.jpg" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
 		
