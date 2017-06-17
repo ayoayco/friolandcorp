@@ -1902,7 +1902,7 @@ i.logo {
     width: 100%;
     position: absolute;
     /*margin-top: 70px;*/
-    top: 10% !important;
+    top: 15% !important;
     text-align: center;
     z-index: 11;
 }
