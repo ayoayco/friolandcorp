@@ -37,7 +37,13 @@
 				<?php // astrid_branding(); ?>
 			</div-->
 			<nav id="mainnav" class="main-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php
+					if(is_front_page()){
+						wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+					}else{
+						wp_nav_menu( array( 'theme_location' => 'inside', 'menu_id' => 'pages-menu' ) );
+					}
+				?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->

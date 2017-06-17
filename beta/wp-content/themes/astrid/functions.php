@@ -52,6 +52,7 @@ function astrid_setup() {
 	register_nav_menus( array(
 		'primary' 	=> esc_html__( 'Primary', 'astrid' ),
 		'footer' 	=> esc_html__( 'Footer', 'astrid' ),
+		'inside' 	=> esc_html__( 'Inside', 'astrid' ),
 	) );
 
 	/*

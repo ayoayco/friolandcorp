@@ -28,6 +28,7 @@ body {
     background-color: #F5F9F8;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    min-width: 1200px;
 }
 
 h1,
