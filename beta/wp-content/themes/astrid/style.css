@@ -1932,7 +1932,7 @@ i.logo {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.widget p .btn-primary,
+.widget:not(#team) p .btn-primary,
 .service-content .btn-primary {
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 15px;
@@ -1942,8 +1942,17 @@ i.logo {
     text-align: center;
 }
 
-.widget p,
-.widget ol {
+.widget:not(#team) p,
+.widget:not(#team) ol,
+.widget:not(#team) h2,
+h3.header-text,
+h5.header-desc,
+.service-content {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.widget:not(#team) p,
+.widget:not(#team) ol {
     margin: 20px auto;
     color: #fff;
     display: table;
