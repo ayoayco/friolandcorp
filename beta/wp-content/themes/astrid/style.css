@@ -1944,11 +1944,18 @@ i.logo {
 
 .widget:not(#team) p,
 .widget:not(#team) ol,
-.widget:not(#team) h2,
+.service-content {
+    /* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); */
+    font-size: 18px;
+}
+
 h3.header-text,
 h5.header-desc,
-.service-content {
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+h2.widget-title,
+h3.service-title {
+    /* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); */
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .widget:not(#team) p,
@@ -1956,9 +1963,8 @@ h5.header-desc,
     margin: 20px auto;
     color: #fff;
     display: table;
-    text-transform: uppercase;
     letter-spacing: 5px;
-    width: 50%;
+    width: 60%;
 }
 
 .header-image::after {
