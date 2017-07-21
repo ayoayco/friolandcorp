@@ -1899,37 +1899,8 @@ div.menu-pages-menu-container {
     padding-top: 20px;
 }
 
-div.textwidget ol {
-    min-width: 470px;
-}
-
 #text-12 p {
     min-width: 460px;
-}
-
-div.textwidget {
-    color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    letter-spacing: 1px;
-    background: rgba(3, 3, 3, 0.5);
-    width: 70%;
-    margin: 0 auto;
-}
-
-i.logo {
-    display: block;
-    margin: 0 auto;
-    background-size: cover !important;
-    height: 250px;
-    width: 250px;
-}
-
-i.logo.top {
-    margin: 0 !important;
-    height: 99px;
-    width: 99px;
-    float: left;
 }
 
 .header-info {
