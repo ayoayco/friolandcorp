@@ -21,7 +21,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #656D6D;
+    color: #333;
     word-wrap: break-word;
     line-height: 1.9;
     letter-spacing: 1px;
@@ -580,7 +580,7 @@ select {
 
 .widget-area .widget,
 .widget-area .widget a {
-    color: #656D6D;
+    color: #333;
 }
 
 .widget-area .widget-title {
@@ -1889,13 +1889,18 @@ body.page-template-page_widgetized {
     text-align: center;
 }
 
-div.menu-menu-container {
+div.menu-menu-container,
+div.menu-pages-menu-container {
     float: left;
     padding-top: 20px;
 }
 
 div.textwidget ol {
     min-width: 470px;
+}
+
+#text-12 p {
+    min-width: 460px;
 }
 
 div.textwidget {
