@@ -39,8 +39,10 @@
 			<div id="mainnav" class="main-navigation" role="navigation">
 				<?php
 					if(is_front_page()){
+						echo '<i class="logo top">&nbsp;</i>';
 						wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
 					}else{
+						echo '<i class="logo top">&nbsp;</i>';
 						wp_nav_menu( array( 'theme_location' => 'inside', 'menu_id' => 'pages-menu' ) );
 					}
 				?>
