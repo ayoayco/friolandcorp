@@ -1863,11 +1863,12 @@ body.page-template-page_widgetized {
 
 .site-header.has-header {
     background-color: transparent;
+    padding: 5px;
 }
 
 .site-header.header-scrolled {
     background-color: rgba(32, 37, 41, 0.9);
-    padding: 5px 0;
+    padding: 0;
     border-bottom: 1px solid transparent;
 }
 
