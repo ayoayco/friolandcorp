@@ -280,6 +280,7 @@ select {
     position: relative;
     padding: 3px 0;
     z-index: 11;
+    font-size: 14px;
 }
 
 .main-navigation li a::before,
