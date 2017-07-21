@@ -143,7 +143,7 @@ class Atframework_Services extends WP_Widget {
 							<?php endif; ?>
 							<div class="service-content">
 								<h3 class="service-title">Want to Inquire?</h3>
-								For inquiries, kindly contact us at <a href="mailto:info@friolandcorp.com">info@friolandcorp.com</a> with the desired service as the subject of the e-mail (i.e. Land Use Conversion; Home Improvement and Interior Design; Leasing).
+								For inquiries, kindly contact us at <a href="mailto:info@friolandcorp.com">info@friolandcorp.com</a> with the desired service as the subject of the e-mail
 								<a href="#contact-us" class="btn btn-primary">Contact Us  &rarr;</a>
 							</div>
 						</div>
