@@ -955,6 +955,8 @@ select {
 
 .entry-title {
     margin-top: 0;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .entry-title,
