@@ -1906,7 +1906,7 @@ div.menu-pages-menu-container {
 .header-info {
     width: 100%;
     position: absolute;
-    /*margin-top: 70px;*/
+    margin-top: -50px;
     top: 15% !important;
     text-align: center;
     z-index: 11;
@@ -2866,6 +2866,15 @@ section#services .row-overlay {
 .service-content .btn-primary:active {
     position: relative;
     top: 1px;
+}
+
+#social-div {
+    margin-top: 50px;
+}
+
+#social-div a {
+    color: white;
+    text-decoration: none;
 }
 
 
