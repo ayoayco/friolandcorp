@@ -339,7 +339,13 @@ function astrid_header_text() {
 				if ($header_button_url) {
 					echo '<a class="button header-button" href="' . esc_url($header_button_url) . '">' . esc_html($header_button) . '</a>';
 				}
-	echo 	'</div>';
+	echo 	'</div>
+			<div id="social-div">
+				<a href="https://www.facebook.com/friolandcorp"><i class="fa fa-facebook-official"></i> facebook.com/friolandcorp</a>
+				<!--a href="https://www.twitter.com/friolandcorp"><i class="fa fa-twitter"></i> friolandcorp</a> | 
+				<a href="https://www.instagram.com/friolandcorp"><i class="fa fa-instagram"></i> friolandcorp</a-->
+			</div>
+	';
 	echo '</div>';
 }
 
