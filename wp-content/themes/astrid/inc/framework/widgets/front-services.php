@@ -135,7 +135,7 @@ class Atframework_Services extends WP_Widget {
 						</div>
 					<?php endwhile; ?>
 
-						<div class="service astrid-3col">
+						<!--div class="service astrid-3col">
 							<?php if ( has_post_thumbnail() ) : ?>
 							<div class="service-thumb">
 								<?php the_post_thumbnail('astrid-small-thumb'); ?>
@@ -146,7 +146,7 @@ class Atframework_Services extends WP_Widget {
 								For inquiries, kindly contact us at <a href="mailto:info@friolandcorp.com">info@friolandcorp.com</a> with the desired service as the subject of the e-mail
 								<a href="#contact-us" class="btn btn-primary">Contact Us  &rarr;</a>
 							</div>
-						</div>
+						</div-->
 					
 				</div>
 
