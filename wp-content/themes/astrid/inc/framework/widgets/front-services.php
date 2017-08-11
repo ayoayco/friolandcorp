@@ -130,7 +130,7 @@ class Atframework_Services extends WP_Widget {
 							<div class="service-content">
 								<h3 class="service-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<?php echo wp_trim_words( get_the_content(), 12 ); ?>
-								<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More  &rarr;</a>
+								<br /><a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More  &rarr;</a>
 							</div>
 						</div>
 					<?php endwhile; ?>
