@@ -341,7 +341,7 @@ function astrid_header_text() {
 				}
 	echo 	'</div>
 			<div id="social-div">
-				<a href="https://www.facebook.com/friolandcorp"><i class="fa fa-facebook-official"></i> facebook.com/friolandcorp</a>
+				<a href="https://www.facebook.com/friolandcorp"><i class="fa fa-facebook-official"></i> friolandcorp</a> | 
 				<!--a href="https://www.twitter.com/friolandcorp"><i class="fa fa-twitter"></i> friolandcorp</a--> 
 				<a href="https://www.instagram.com/frioland.corp"><i class="fa fa-instagram"></i> frioland.corp</a>
 			</div>
