@@ -338,7 +338,8 @@ function astrid_header_text() {
 
 				if ($header_button_url) {
 					echo '<a class="button header-button" href="' . esc_url($header_button_url) . '">' . esc_html($header_button) . '</a>';
-
+				}
+	echo '</div>';
 	echo '</div>';
 }
 
